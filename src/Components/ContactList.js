@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import ContactCard from './ContactCard';
 
 
@@ -15,6 +16,7 @@ const ContactList = (props) => {
     return (
         <div className="contactlist-con">
             <h2 className="title">Contact List</h2>
+            <Link to="/add"><button>Add to contacts</button></Link>
             {renderContacts}
         </div>
     )
