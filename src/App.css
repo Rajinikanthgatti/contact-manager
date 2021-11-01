@@ -90,7 +90,7 @@ button{
 .fa {
   display: inline-block;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.75em;
   padding: .2em;
 }
 .fa-trash-o:before{
