@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function ContactDetails(props) {
-    console.log(props);
     const {name, email} = props.history.location.state.contact;
     return (
         <div className="contacts-con"> 
