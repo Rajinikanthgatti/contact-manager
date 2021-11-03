@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function ContactDetails(props) {
     const {name, email} = props.history.location.state.contact;
@@ -11,6 +12,7 @@ export default function ContactDetails(props) {
             <div className="contactlist-field">
                 {email}
             </div>
+            <Link to="/"><button>Back to contacts</button></Link>
         </div>
     )
 }
