@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import DeleteContactConfirm from './DeleteContactConfirm';
 
 export default function ContactCard(props) {
     const {id, name, email} = props.contact
+    const clickHandler = (id) => {
+        console.log(props)
+        props.deleteContactHandler(id);
+    }
+
     return (
         <div className="contacts-con" key={id}> 
             <i className="fa fa-user-circle"></i>
@@ -15,7 +21,7 @@ export default function ContactCard(props) {
                 </div>
             </Link>
             <div className="action-items">
-                <i className="fa fa-trash-o" onClick = {() => {props.clickHandler(id)}}></i>
+                <Link to={{pathname:`/delete/${id}`}}><i className="fa fa-trash-o"></i></Link>
                 <i className='fa fa-edit'></i>
             </div>
         </div>
