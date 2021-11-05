@@ -9,6 +9,4 @@ Contact Manager here User can add a contact with name and email details.
     Update the details if provided any wrong details.
 
 ## Used Json-Server npm for api references
-    To start Json-Server navigate to ~/contact-manager/server-api/ and run 
-### npm start
-    To start the server.
+    To start Json-Server navigate to ~/contact-manager/server-api/ and run ### npm start  To start the server.
